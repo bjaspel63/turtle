@@ -1,0 +1,58 @@
+import turtle
+
+t = turtle.Turtle()
+t.shape("turtle")
+t.speed (0)
+
+t.penup()           #disable pen
+t.goto (-120, 80)   #location
+t.pendown ()        #enable pen
+
+t.forward (100)     #forward
+t.left (90)         #left 90 degrees
+t.forward (100)     #forward
+t.left (90)         #left 90 degrees
+t.forward (100)     #forward
+t.left (90)         #left 90 degrees
+t.forward (100)     #forward
+t.left (90)         #left 90 degrees
+
+t.penup()          #disable pen
+t.goto (10, 80)    #location
+t.pendown()        #enable pen
+
+for i in range (4):
+  t.forward (100)   #forward
+  t.left (90)         #left 90 degrees 
+  
+t.penup()          #disable pen
+t.goto (-120,-20)    #location
+t.pendown()        #enable pen
+
+for i in range (3):
+  t.forward (100)   #forward
+  t.left (120)         #left 90 degrees
+  
+t.penup()          #disable pen
+t.goto (10,-20)    #location
+t.pendown()        
+
+for i in range (3):
+  t.forward (100)   #forward
+  t.left (120)         #left 90 degrees
+
+t.penup()          #disable pen
+t.goto (0,-130)    #location
+t.pendown()        
+t.circle (50)
+
+t.penup()          #disable pen
+t.goto (-40,-70)    #location
+t.pendown()
+
+for i in range (5):
+  t.forward (80)   #forward
+  t.right (144)         #left 90 degrees
+
+t.hideturtle()
+t.done()

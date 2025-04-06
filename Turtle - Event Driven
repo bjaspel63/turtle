@@ -1,0 +1,90 @@
+import turtle
+
+tr=turtle.Screen()
+tr.bgcolor("oldlace")
+
+
+turtle.shape("turtle")
+
+move_speed=10         #move the turtle
+turn_speed=10         #turn the turtle
+
+def forward():
+  turtle.forward(move_speed)
+
+def backward():
+  turtle.backward(move_speed)
+
+def right():
+  turtle.right(turn_speed)
+
+def left():
+  turtle.left(turn_speed)
+
+def pen_up():
+  turtle.penup()
+
+def pen_down():
+  turtle.pendown()
+  turtle.pencolor("black")
+  turtle.pensize(5)
+
+def erase():
+  turtle.pencolor("oldlace")
+  turtle.pensize(20)
+  turtle.pendown()
+
+def pen_red():
+  turtle.pendown()
+  turtle.pencolor("indianred")
+  turtle.pensize(5)
+
+def pen_orange():
+  turtle.pendown()
+  turtle.pencolor("sandybrown")
+  turtle.pensize(5)
+
+def pen_yellow():
+  turtle.pendown()
+  turtle.pencolor("gold")
+  turtle.pensize(5)
+
+def pen_green():
+  turtle.pendown()
+  turtle.pencolor("yellowgreen")
+  turtle.pensize(5)
+
+def pen_blue():
+  turtle.pendown()
+  turtle.pencolor("mediumturquoise")
+  turtle.pensize(5)
+
+def pen_purple():
+  turtle.pendown()
+  turtle.pencolor("orchid")
+  turtle.pensize(5)
+
+def clear():
+  tr.clear()
+
+turtle.penup()
+turtle.speed(0)
+turtle.home()
+
+tr.onkey(forward, "W")
+tr.onkey(backward, "S")
+tr.onkey(right, "D")
+tr.onkey(left, "A")
+tr.onkey(pen_up, "up")
+tr.onkey(pen_down, "down")
+tr.onkey(erase, "backspace")
+tr.onkey(clear, "x")
+
+tr.onkey(pen_red, "r")
+tr.onkey(pen_orange, "o")
+tr.onkey(pen_yellow, "y")
+tr.onkey(pen_green, "g")
+tr.onkey(pen_blue, "b")
+tr.onkey(pen_purple, "p")
+
+tr.listen()

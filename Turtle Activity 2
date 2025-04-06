@@ -1,0 +1,77 @@
+import turtle
+t = turtle.Turtle()
+t.shape("turtle")
+t.pensize(5)
+t.speed(10)
+
+tr = turtle.Screen()
+tr.bgcolor("floralwhite")
+
+t.penup()         #whitebg
+t.goto(0, -120)
+t.pendown()
+
+t.pencolor("white")
+t.fillcolor("white")
+
+t.begin_fill()
+t.circle(120)
+t.end_fill()
+
+t.penup()         #square
+t.goto(-80, 20)
+t.pendown()
+
+t.pencolor("crimson")
+t.fillcolor("crimson")
+
+t.begin_fill()
+for i in range(4):
+  t.forward(60)
+  t.left(90)
+t.end_fill()
+
+t.penup()         #circle
+t.goto(50, 20)
+t.pendown()
+
+t.pencolor("limegreen")
+t.fillcolor("limegreen")
+
+t.begin_fill()
+t.circle(30)
+t.end_fill()
+
+t.penup()         #tri
+t.goto(-80, -80)
+t.pendown()
+
+t.pencolor("deepskyblue")
+t.fillcolor("deepskyblue")
+
+t.begin_fill()
+for i in range(3):
+  t.forward(60)
+  t.left(120)
+t.end_fill()
+
+t.penup()         #star
+t.goto(80, -40)
+t.pendown()
+
+t.pencolor("gold")
+t.fillcolor("gold")
+
+t.begin_fill()
+for i in range(5):
+  t.right(144)
+  t.forward(60)
+t.end_fill()
+
+t.penup()         #star
+t.goto(0, -140)
+t.pendown()
+
+t.write("Name", None, "center", "20pt bold, times new roman, bold")
+t.hideturtle()
+t.done()

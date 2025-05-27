@@ -54,5 +54,6 @@ for i in range (5):
   t.forward (80)   #forward
   t.right (144)         #left 90 degrees
 
+t.write("Sample Text", None, "center", "20pt bold, times new roman, bold")
 t.hideturtle()
 t.done()

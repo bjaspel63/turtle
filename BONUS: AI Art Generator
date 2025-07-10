@@ -1,0 +1,12 @@
+import turtle, random
+
+bot = turtle.Turtle()
+bot.speed(0)
+
+colors = ["red", "blue", "green", "orange", "purple"]
+for _ in range(50):
+    bot.color(random.choice(colors))
+    bot.forward(random.randint(20, 100))
+    bot.left(random.randint(0, 360))
+
+turtle.done()
